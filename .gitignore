@@ -1,0 +1,10 @@
+# Large CAD source file (too big for git, use LFS if needed)
+*.step
+*.STEP
+*.stp
+
+# Python cache
+__pycache__/
+*.pyc
+
+# trlc-dk1 is a submodule
