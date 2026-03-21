@@ -41,6 +41,56 @@
   <link name="world"/>
 
   <!-- ============================================================ -->
+  <!-- Front crossbar: HFS8-4080-700, 700mm aluminum extrusion      -->
+  <!-- Runs along X at Y=0, centered at Z=0.020 (half of 40mm)     -->
+  <!-- ============================================================ -->
+  <link name="front_crossbar">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/front_crossbar.glb"/>
+      </geometry>
+      <material name="aluminum"><color rgba="0.75 0.75 0.75 1.0"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/front_crossbar.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="front_crossbar_joint" type="fixed">
+    <parent link="world"/>
+    <child link="front_crossbar"/>
+    <origin xyz="0 0 0.020" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ============================================================ -->
+  <!-- Camera mast: HFS6-3030-400, vertical 30x30mm extrusion       -->
+  <!-- At front-center of frame, rises 400mm in Z                   -->
+  <!-- ============================================================ -->
+  <link name="camera_mast">
+    <visual>
+      <origin xyz="0 0 0.200" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/camera_mast.glb"/>
+      </geometry>
+      <material name="aluminum"><color rgba="0.75 0.75 0.75 1.0"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.200" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/camera_mast.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="camera_mast_joint" type="fixed">
+    <parent link="world"/>
+    <child link="camera_mast"/>
+    <origin xyz="0 -0.011 0.0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ============================================================ -->
   <!-- Overhead context camera (top of vertical 30x30 mast)         -->
   <!-- STEP position: (0, 478.81, -10.65) mm                        -->
   <!-- Camera Z-axis (optical): (0, -0.707, -0.707) in STEP         -->
