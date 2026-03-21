@@ -44,50 +44,60 @@
   <!-- Front crossbar: HFS8-4080-700, 700mm aluminum extrusion      -->
   <!-- Runs along X at Y=0, centered at Z=0.020 (half of 40mm)     -->
   <!-- ============================================================ -->
+  <!-- Front crossbar: HFS8-4080-700 aluminum extrusion
+       700mm long (X), 80mm deep (Y), 40mm tall (Z)
+       Runs along X axis at Y=0 (front of frame), Z=0..40mm
+       Note: simplified as box, real profile has T-slots -->
   <link name="front_crossbar">
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="meshes/front_crossbar.glb"/>
+        <box size="0.700 0.080 0.040"/>
       </geometry>
-      <material name="aluminum"><color rgba="0.75 0.75 0.75 1.0"/></material>
+      <material name="aluminum"><color rgba="0.80 0.80 0.80 1.0"/></material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="meshes/front_crossbar.stl"/>
+        <box size="0.700 0.080 0.040"/>
       </geometry>
     </collision>
   </link>
   <joint name="front_crossbar_joint" type="fixed">
     <parent link="world"/>
     <child link="front_crossbar"/>
-    <origin xyz="0 0 0.020" rpy="0 0 0"/>
+    <!-- Center of crossbar: X=0, Y=-40mm (front face at Y=0), Z=20mm (center of 40mm height) -->
+    <origin xyz="0.0 -0.040 0.020" rpy="0 0 0"/>
   </joint>
 
   <!-- ============================================================ -->
   <!-- Camera mast: HFS6-3030-400, vertical 30x30mm extrusion       -->
   <!-- At front-center of frame, rises 400mm in Z                   -->
   <!-- ============================================================ -->
+  <!-- Camera mast: HFS6-3030-400 aluminum extrusion
+       30x30mm cross-section, 400mm tall
+       Rises from top of front crossbar (Z=40mm) to Z=440mm
+       Note: simplified as box, real profile has T-slots -->
   <link name="camera_mast">
     <visual>
-      <origin xyz="0 0 0.200" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="meshes/camera_mast.glb"/>
+        <box size="0.030 0.030 0.400"/>
       </geometry>
-      <material name="aluminum"><color rgba="0.75 0.75 0.75 1.0"/></material>
+      <material name="aluminum"><color rgba="0.80 0.80 0.80 1.0"/></material>
     </visual>
     <collision>
-      <origin xyz="0 0 0.200" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="meshes/camera_mast.stl"/>
+        <box size="0.030 0.030 0.400"/>
       </geometry>
     </collision>
   </link>
   <joint name="camera_mast_joint" type="fixed">
     <parent link="world"/>
     <child link="camera_mast"/>
-    <origin xyz="0 -0.011 0.0" rpy="0 0 0"/>
+    <!-- Center of mast: sits on top of crossbar (Z=0.040), rises 400mm, center at Z=0.240 -->
+    <origin xyz="0.0 0.011 0.240" rpy="0 0 0"/>
   </joint>
 
   <!-- ============================================================ -->
