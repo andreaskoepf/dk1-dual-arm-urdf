@@ -31,7 +31,7 @@
 
   ── Mesh Paths ──────────────────────────────────────────────────────────────
     Relative to this URDF file. Both arms share the same mesh files
-    (trlc-dk1/urdf/follower/meshes/) since they are physically identical.
+    (meshes/) since they are physically identical.
 -->
 <robot name="dk1_dual_arm">
 
@@ -124,13 +124,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/base_link.glb"/>
+        <mesh filename="meshes/visual/base_link.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/base_link.stl"/>
+        <mesh filename="meshes/collision/base_link.stl"/>
       </geometry>
     </collision>
   </link>
@@ -149,13 +149,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/link1-2.glb"/>
+        <mesh filename="meshes/visual/link1-2.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/link1-2.stl"/>
+        <mesh filename="meshes/collision/link1-2.stl"/>
       </geometry>
     </collision>
   </link>
@@ -176,13 +176,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/link2-3.glb"/>
+        <mesh filename="meshes/visual/link2-3.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/link2-3.stl"/>
+        <mesh filename="meshes/collision/link2-3.stl"/>
       </geometry>
     </collision>
   </link>
@@ -203,13 +203,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/link3-4.glb"/>
+        <mesh filename="meshes/visual/link3-4.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/link3-4.stl"/>
+        <mesh filename="meshes/collision/link3-4.stl"/>
       </geometry>
     </collision>
   </link>
@@ -230,13 +230,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/link4-5.glb"/>
+        <mesh filename="meshes/visual/link4-5.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/link4-5.stl"/>
+        <mesh filename="meshes/collision/link4-5.stl"/>
       </geometry>
     </collision>
   </link>
@@ -257,13 +257,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/link5-6.glb"/>
+        <mesh filename="meshes/visual/link5-6.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/link5-6.stl"/>
+        <mesh filename="meshes/collision/link5-6.stl"/>
       </geometry>
     </collision>
   </link>
@@ -284,13 +284,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/link6-7.glb"/>
+        <mesh filename="meshes/visual/link6-7.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/link6-7.stl"/>
+        <mesh filename="meshes/collision/link6-7.stl"/>
       </geometry>
     </collision>
   </link>
@@ -311,13 +311,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/finger_left.glb"/>
+        <mesh filename="meshes/visual/finger_left.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/finger_left.stl"/>
+        <mesh filename="meshes/collision/finger_left.stl"/>
       </geometry>
     </collision>
   </link>
@@ -338,13 +338,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/finger_right.glb"/>
+        <mesh filename="meshes/visual/finger_right.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/finger_right.stl"/>
+        <mesh filename="meshes/collision/finger_right.stl"/>
       </geometry>
     </collision>
   </link>
@@ -382,13 +382,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/base_link.glb"/>
+        <mesh filename="meshes/visual/base_link.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/base_link.stl"/>
+        <mesh filename="meshes/collision/base_link.stl"/>
       </geometry>
     </collision>
   </link>
@@ -407,13 +407,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/link1-2.glb"/>
+        <mesh filename="meshes/visual/link1-2.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/link1-2.stl"/>
+        <mesh filename="meshes/collision/link1-2.stl"/>
       </geometry>
     </collision>
   </link>
@@ -434,13 +434,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/link2-3.glb"/>
+        <mesh filename="meshes/visual/link2-3.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/link2-3.stl"/>
+        <mesh filename="meshes/collision/link2-3.stl"/>
       </geometry>
     </collision>
   </link>
@@ -461,13 +461,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/link3-4.glb"/>
+        <mesh filename="meshes/visual/link3-4.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/link3-4.stl"/>
+        <mesh filename="meshes/collision/link3-4.stl"/>
       </geometry>
     </collision>
   </link>
@@ -488,13 +488,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/link4-5.glb"/>
+        <mesh filename="meshes/visual/link4-5.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/link4-5.stl"/>
+        <mesh filename="meshes/collision/link4-5.stl"/>
       </geometry>
     </collision>
   </link>
@@ -515,13 +515,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/link5-6.glb"/>
+        <mesh filename="meshes/visual/link5-6.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/link5-6.stl"/>
+        <mesh filename="meshes/collision/link5-6.stl"/>
       </geometry>
     </collision>
   </link>
@@ -542,13 +542,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/link6-7.glb"/>
+        <mesh filename="meshes/visual/link6-7.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/link6-7.stl"/>
+        <mesh filename="meshes/collision/link6-7.stl"/>
       </geometry>
     </collision>
   </link>
@@ -569,13 +569,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/finger_left.glb"/>
+        <mesh filename="meshes/visual/finger_left.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/finger_left.stl"/>
+        <mesh filename="meshes/collision/finger_left.stl"/>
       </geometry>
     </collision>
   </link>
@@ -596,13 +596,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/visual/finger_right.glb"/>
+        <mesh filename="meshes/visual/finger_right.glb"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="trlc-dk1/urdf/follower/meshes/collision/finger_right.stl"/>
+        <mesh filename="meshes/collision/finger_right.stl"/>
       </geometry>
     </collision>
   </link>
