@@ -109,7 +109,9 @@
   <joint name="overhead_camera_mount" type="fixed">
     <parent link="world"/>
     <child link="overhead_camera"/>
-    <origin xyz="0.0 0.01065 0.47881" rpy="-2.356194490192345 0 0"/>
+    <!-- CALIBRATED (2026-07-01, extrinsics.json head_cam_in_base); link frame = OpenCV optical.
+         old nominal: xyz="0.0 0.01065 0.47881" rpy="-2.356194490192345 0 0" -->
+    <origin xyz="-0.005139 0.015259 0.469202" rpy="-2.303446 -0.002141 -0.017958"/>
   </joint>
 
   <!-- ============================================================ -->
@@ -379,7 +381,11 @@
   <joint name="right_camera_joint" type="fixed">
     <parent link="right_link6-7"/>
     <child link="right_camera"/>
-    <origin xyz="0.0471 0 0.063314" rpy="0 0.2618 0"/>
+    <!-- CALIBRATED (2026-07-01): cam_in_link6-7 = tool0_in_link6-7 @ cam2ee (extrinsics.json
+         right_wrist). Link frame = the 180°-ROTATED (upright/teleop) optical frame cam2ee is
+         calibrated in (wrist cam is mounted upside-down; see plan/REF-coordinate-frames.md).
+         old nominal: xyz="0.0471 0 0.063314" rpy="0 0.2618 0" -->
+    <origin xyz="0.043612 0.000394 0.049776" rpy="-1.749933 -0.028894 -1.569908"/>
   </joint>
 
   <!-- ============================================================ -->
@@ -649,7 +655,11 @@
   <joint name="left_camera_joint" type="fixed">
     <parent link="left_link6-7"/>
     <child link="left_camera"/>
-    <origin xyz="0.0471 0 0.063314" rpy="0 0.2618 0"/>
+    <!-- CALIBRATED (2026-07-01): cam_in_link6-7 = tool0_in_link6-7 @ cam2ee (extrinsics.json
+         left_wrist). Link frame = the 180°-ROTATED (upright/teleop) optical frame cam2ee is
+         calibrated in (wrist cam is mounted upside-down; see plan/REF-coordinate-frames.md).
+         old nominal: xyz="0.0471 0 0.063314" rpy="0 0.2618 0" -->
+    <origin xyz="0.049037 -0.002560 0.051802" rpy="-1.749208 0.018688 -1.552414"/>
   </joint>
 
 </robot>
