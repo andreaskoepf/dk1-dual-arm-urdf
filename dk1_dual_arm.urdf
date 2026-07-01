@@ -655,11 +655,11 @@
   <joint name="left_camera_joint" type="fixed">
     <parent link="left_link6-7"/>
     <child link="left_camera"/>
-    <!-- CALIBRATED (2026-07-01): cam_in_link6-7 = tool0_in_link6-7 @ cam2ee (extrinsics.json
-         left_wrist). Link frame = the 180°-ROTATED (upright/teleop) optical frame cam2ee is
-         calibrated in (wrist cam is mounted upside-down; see plan/REF-coordinate-frames.md).
-         old nominal: xyz="0.0471 0 0.063314" rpy="0 0.2618 0" -->
-    <origin xyz="0.049037 -0.002560 0.051802" rpy="-1.749208 0.018688 -1.552414"/>
+    <!-- CALIBRATED (2026-07-01, FR-008 active auto-calib: 50-pose left sweep, PARK reproj 0.194px):
+         cam_in_link6-7 from extrinsics.json left_wrist. Link frame = the 180°-ROTATED (upright/
+         teleop) optical frame cam2ee is calibrated in (wrist cam is mounted upside-down; see
+         plan/REF-coordinate-frames.md). old nominal: xyz="0.0471 0 0.063314" rpy="0 0.2618 0" -->
+    <origin xyz="0.050555 0.000134 0.052583" rpy="-1.733395 0.028466 -1.555563"/>
   </joint>
 
 </robot>
