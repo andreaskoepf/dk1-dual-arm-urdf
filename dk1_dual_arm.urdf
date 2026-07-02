@@ -656,11 +656,13 @@
   <joint name="left_camera_joint" type="fixed">
     <parent link="left_link6-7"/>
     <child link="left_camera"/>
-    <!-- CALIBRATED (2026-07-01, FR-008 active auto-calib: 50-pose left sweep, PARK reproj 0.194px):
+    <!-- CALIBRATED (2026-07-02, FR-008 hand-eye on the REFIT left-wrist intrinsics: 50-pose sweep, PARK
+         reproj 0.191px — adopted for cross-arm consistency with the right (fx≈458; camera pose 2.5mm/2.1°).
+         Left board_in_base spread stays ~10mm: that's KINEMATIC (joint-2 ~2.8° off), fixable via the joint-offset BA.
          cam_in_link6-7 from extrinsics.json left_wrist. Link frame = the 180°-ROTATED (upright/
          teleop) optical frame cam2ee is calibrated in (wrist cam is mounted upside-down; see
          plan/REF-coordinate-frames.md). old nominal: xyz="0.0471 0 0.063314" rpy="0 0.2618 0" -->
-    <origin xyz="0.050555 0.000134 0.052583" rpy="-1.733395 0.028466 -1.555563"/>
+    <origin xyz="0.050209 -0.000553 0.050161" rpy="-1.715683 0.013687 -1.560020"/>
   </joint>
 
 </robot>
